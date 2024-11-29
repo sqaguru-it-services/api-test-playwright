@@ -1,0 +1,28 @@
+{
+  "name": "api-test-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-local": "npx playwright test && npx playwright show-report",
+    "test": "npx playwright test"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "api-testing",
+    "nodejs"
+  ],
+  "author": "Osanda Nimalarathna",
+  "license": "ISC",
+  "dependencies": {
+    "api-test-playwright": "file:",
+    "deepmerge": "^4.3.1",
+    "playwright": "^1.42.1",
+    "playwright-api-automation-demo": "file:"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.30"
+  }
+}

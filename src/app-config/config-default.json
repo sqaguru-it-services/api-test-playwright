@@ -1,0 +1,9 @@
+{
+  "baseApiUrl": "",
+  "urlPath" : {
+    "auth" : "/auth",
+    "booking": "/booking"
+  }
+}
+
+
