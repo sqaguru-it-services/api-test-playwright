@@ -11,11 +11,11 @@ on:
     inputs:
       environment:
         description: 'Environment to run tests on (e.g., dev, staging, prod)Environment to run tests on (e.g., dev, uat, ...)' # Optional description
-        required: false                         # Input is optional
+        required: true                         # Input is optional
         default: dev                            # Default value is 'dev'
 
 env:
-  TEST_ENV: ${{ github.event.inputs.environment }}
+  TEST_ENV: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.environment || 'dev' }}
 
 jobs:
   test:
